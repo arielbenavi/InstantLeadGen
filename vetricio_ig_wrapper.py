@@ -5,8 +5,10 @@ from requests.adapters import HTTPAdapter
 import re
 import time
 
+
 with open('vetricio_api_key.txt', 'r') as file:
         VERTIC_API_KEY = file.read().strip()
+
 
 class VetricIOBase:
     base = "https://api.vetric.io"

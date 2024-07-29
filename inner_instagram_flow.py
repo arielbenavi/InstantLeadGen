@@ -9,9 +9,9 @@ from vetricio_ig_wrapper import (
 # Constants
 WATCHLIST = [
     'https://www.instagram.com/itspressplayuk',
-    'https://www.instagram.com/whatnycsoundslike',
-    'https://www.instagram.com/ontheradarradio',
-    'https://www.instagram.com/producergrind'
+    # 'https://www.instagram.com/whatnycsoundslike',
+    # 'https://www.instagram.com/ontheradarradio',
+    # 'https://www.instagram.com/producergrind'
 ]
 
 def process_and_extract(df, account):
