@@ -8,7 +8,7 @@ InstantLeadGen is a tool originally made for music producers to gather and analy
 - **Multi-Platform Integration**: Seamlessly combines data from Genius.com, Instagram, and Muso.ai
 - **Advanced Data Standardization**: Transforms diverse data sources into a unified, actionable format
 - **Real-time Google Sheets Integration**: Instantly populates your spreadsheets with fresh data
-- **Intelligent Telegram Notifications**: Keeps you updated with smart, context-aware messages
+- **Intelligent Telegram Notifications**: Keeps you updated with success/fail alerts
 
 ## 🛠 Installation
 
@@ -56,7 +56,7 @@ This will execute the scraping workflows for Genius.com, Instagram, and Muso.ai,
 
 ## 💡 Examples
 
-### Tapping into Genius.com's Goldmine
+### Scraping Genius.com
 
 ```python
 from networker_genius import scrape_genius
@@ -65,7 +65,7 @@ future_hits = scrape_genius(2024, 7, release_type='singles', limit=10)
 print(future_hits.head())
 ```
 
-### Unlocking Instagram's Hidden Potential
+### Scraping Instagram
 
 ```python
 from inner_instagram_flow import main_workflow
