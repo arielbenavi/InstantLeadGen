@@ -18,7 +18,7 @@ InstantLeadGen is a tool originally made for music producers to gather and analy
    cd InstantLeadGen
    ```
 
-2. Install the cutting-edge dependencies:
+2. Install required packages:
    ```
    pip install -r requirements.txt
    ```
@@ -36,22 +36,22 @@ Unleash the power with a single command:
 python main.py
 ```
 
-Watch as InstantLeadGen orchestrates a symphony of data collection, processing, and delivery.
+This will execute the scraping workflows for Genius.com, Instagram, and Muso.ai, and store the results in a Google Sheet.
 
 ## ⚙️ Configuration
 
-- `MAX_RECORDS_PER_SOURCE`: Control the firehose of data
-- `RESULTS_SHEET_ID`: Your Google Sheets command center
+- `MAX_RECORDS_PER_SOURCE`: Set in `main.py` to limit the number of records scraped from each source
+- `RESULTS_SHEET_ID`: Google Sheets ID where results are stored
 
 ## 📁 File Structure
 
-- `main.py`: The maestro conducting the entire operation
-- `networker_genius.py`: Your insider at Genius.com
-- `inner_instagram_flow.py`: Instagram's hidden pathways
-- `networker_muso.py`: Muso.ai's secret informant
-- `vetricio_ig_wrapper.py`: The skeleton key to Instagram's API
-- `gsheet_handler.py`: Your Google Sheets puppet master
-- `telegram_wrapper.py`: Your personal Telegram whisperer
+- `main.py`: Main script that orchestrates the entire workflow
+- `networker_genius.py`: Handles scraping from Genius.com
+- `inner_instagram_flow.py`: Manages Instagram data collection for pre-determined monitored accounts
+- `networker_muso.py`: Scrapes data from Muso.ai
+- `vetricio_ig_wrapper.py`: Wrapper for Vetric.io Instagram API
+- `gsheet_handler.py`: Handles interaction with Google Sheets
+- `telegram_wrapper.py`: Manages Telegram notifications
 
 ## 💡 Examples
 
@@ -75,16 +75,12 @@ print(instagram_intel.head())
 
 ## 🤝 Contributing
 
-Got what it takes to enhance InstantLeadGen? We dare you to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. Use it wisely.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## ⚠️ Disclaimer
 
-InstantLeadGen is a powerful tool. With great power comes great responsibility. Use it ethically and in compliance with all applicable laws and platform terms of service.
-
----
-
-Built with 💻 and 🎵 by music industry hackers, for music industry visionaries.
+InstantLeadGen is a powerful tool, Use it ethically and in compliance with all applicable laws and platform terms of service.
