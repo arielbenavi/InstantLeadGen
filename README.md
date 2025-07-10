@@ -41,6 +41,7 @@ This will execute the scraping workflows for Genius.com, Instagram, and Muso.ai,
 ## ⚙️ Configuration
 
 - `MAX_RECORDS_PER_SOURCE`: Set in `main.py` to limit the number of records scraped from each source
+- `SHEET_NAME`: name of Google Sheets Spreadsheet where results are stored
 - `RESULTS_SHEET_ID`: Google Sheets ID where results are stored
 
 ## 📁 File Structure
